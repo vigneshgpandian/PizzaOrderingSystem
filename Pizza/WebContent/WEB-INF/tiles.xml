@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="HomeLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/HomeMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="basic"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader1.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="reg"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="AdminLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/AdminMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="CustomerLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/CustomerMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	
+	<!-- To Display "UserLogin.jsp" -->
+	<definition name="UserLogin" extends="HomeLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/UserLogin.jsp" />
+	</definition>
+	<!-- To navigate to "Aboutus" -->
+	<definition name="Aboutus" extends="basic">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Aboutus.jsp" />
+	</definition>
+	<!-- To navigate to "Contactus" -->
+	<definition name="Contactus" extends="basic">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Contactus.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="AdminHome" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/AdminHome.jsp" />
+	</definition>
+	<!-- To navigate "CustomerHome" -->
+	<definition name="CustomerHome" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CustomerHome.jsp" />
+	</definition>
+	<!-- To navigate "Password" -->
+	<definition name="Password" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Password.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="Registration" extends="reg">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Registration.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="Success" extends="reg">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Success.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="Failure" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Failure.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="StoreAdd" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/StoreAdd.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="FoodAdd" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/FoodAdd.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ViewStore" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewStore.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="FoodView" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/FoodView.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ViewAllStore" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewAllStore.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ViewAllFood" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewAllFood.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="StoreDetails" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/StoreDetails.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="DeleteStore" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DeleteStore.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ConformDelete" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ConformDelete.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ModifyStore" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ModifyStore.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ConformMofify" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ConformMofify.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ModifyFood" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ModifyFood.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ConformMofifyFood" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ConformMofifyFood.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ViewFood" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewFood.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="FoodDetails" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/FoodDetails.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="DeleteFood" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DeleteFood.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ConformDeleteFood" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ConformDeleteFood.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="ViewCityStore" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewCityStore.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="CityStoreDetails" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CityStoreDetails.jsp" />
+	</definition>
+	<!-- To navigate to "viewFoodItems" -->
+	<definition name="ViewFoodItems" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewFoodItems.jsp" />
+	</definition>
+	<definition name="ViewCart" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewCart.jsp" />
+	</definition>
+	<definition name="Deleted" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Deleted.jsp" />
+	</definition>
+	<definition name="MakeOrder" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/MakeOrder.jsp" />
+	</definition>
+	<definition name="PaymentDetails" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/PaymentDetails.jsp" />
+	</definition>
+	<definition name="pleasewait" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/pleasewait.jsp" />
+	</definition>
+	<definition name="Pay" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Pay.jsp" />
+	</definition>
+	<definition name="ViewOrder" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewOrder.jsp" />
+	</definition>
+	<definition name="redirect" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/redirect.jsp" />
+	</definition>
+	<!-- To navigate to "session failed" -->
+	<definition name="loginfail" extends="basic">		
+		<put-attribute name="body" value="/WEB-INF/jsp/loginfail.jsp" />
+	</definition>
+
+</tiles-definitions>

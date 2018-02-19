@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+		<mapping class="com.wipro.pos.bean.CredentialsBean" />
+		<mapping class="com.wipro.pos.bean.ProfileBean" />
+		<mapping class="com.wipro.pos.bean.StoreBean"/>
+		<mapping class="com.wipro.pos.bean.FoodBean" />
+		<mapping class="com.wipro.pos.bean.CartBean" />
+		<mapping class="com.wipro.pos.bean.OrderBean" />
+		<mapping class="com.wipro.pos.bean.CreditCardBean" />
+		<!-- 
+		<mapping class="com.wipro.pos.bean.OrderBean" /> -->
+		<!-- <mapping class="com.wipro.pos.bean.ShipBean" />
+		<mapping class="com.wipro.pos.bean.PassengerBean" />
+		
+		 />
+		<mapping class="com.wipro.srs.bean.RouteBean" />
+		<mapping class="com.wipro.srs.bean.ScheduleBean" /> --> 
+
+
+	</session-factory>
+
+</hibernate-configuration>
